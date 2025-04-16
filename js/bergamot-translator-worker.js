@@ -457,7 +457,7 @@ function isDataURI(filename) {
 
 var wasmBinaryFile;
 
-wasmBinaryFile = "bergamot-translator-worker.wasm";
+wasmBinaryFile = "https://hackisland.github.io/mozilla-translate/js/bergamot-translator-worker.wasm";
 
 if (!isDataURI(wasmBinaryFile)) {
  wasmBinaryFile = locateFile(wasmBinaryFile);

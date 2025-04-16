@@ -3,7 +3,7 @@ var translationService, responseOptions, input = undefined;
 // A map of language-pair to TranslationModel object
 var translationModels = new Map();
 
-const BERGAMOT_TRANSLATOR_MODULE = "bergamot-translator-worker.js";
+const BERGAMOT_TRANSLATOR_MODULE = "https://hackisland.github.io/mozilla-translate/js/bergamot-translator-worker.js";
 // this does't require CORS enabled, but it doesn't return the actual file from git LFS, only a pointer. It's ok to use for regular files like model registry
 const githubRaw = "https://raw.githubusercontent.com/mozilla/firefox-translations-models/refs/heads/main"
 // free and potentially unsecure proxy
