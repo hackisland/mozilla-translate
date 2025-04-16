@@ -7,7 +7,7 @@ const BERGAMOT_TRANSLATOR_MODULE = "bergamot-translator-worker.js";
 // this does't require CORS enabled, but it doesn't return the actual file from git LFS, only a pointer. It's ok to use for regular files like model registry
 const githubRaw = "https://raw.githubusercontent.com/mozilla/firefox-translations-models/refs/heads/main"
 // free and potentially unsecure proxy
-const proxy = "https://corsproxy.io/?"
+const proxy = "https://corsproxy.io/?url="
 // this returns the correct file from git LFS but requires CORS on the server side, so it requires using a proxy
 const githubLfs = "https://github.com/mozilla/firefox-translations-models/raw/refs/heads/main"
 // retrieve model registry with file hash sums with a secure URL
