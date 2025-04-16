@@ -22,6 +22,9 @@ var ENVIRONMENT_IS_NODE = typeof process == "object" && typeof process.versions 
 var scriptDirectory = "";
 
 function locateFile(path) {
+ if (/^https?:\/\//.test(path)) {
+   return path;
+ }
  if (Module["locateFile"]) {
   return Module["locateFile"](path, scriptDirectory);
  }
